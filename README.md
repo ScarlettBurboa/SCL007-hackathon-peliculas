@@ -111,6 +111,10 @@ De acuerdo a ciertas observaciones como:
  * *la segunda pantalla, pensaron que le faltaba algo porque estaba muy vacía*
  se realizaron algunos cambios y se obtuvo el p [prototipo final.](https://www.figma.com/proto/ImgJy2vp33vNZOREzk93obgZ/prototipo-final?node-id=1%3A2&scaling=scale-down)
 
+## **User Flow**:
 
+Acá se muestra el flujo final del usuario al usar nuestra página
+
+![imagen 5](img/userflow.jpg)
 
 
