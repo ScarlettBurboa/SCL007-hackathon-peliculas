@@ -1,0 +1,165 @@
+/*-------------------- Starting Reset CSS --------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*-------------------- HTML5 display-role reset for older browsers --------------------*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+/*-------------------- Ending Reset CSS --------------------*/
+body{
+	background-color: #100f0f;
+	background-image: url(https://www.sumel.cl/img/fondo-opti-aplication.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Roboto';
+}
+h3{
+	font-size:25px;
+}
+p{
+	color:#fff;
+}
+.show{
+	display: block !important;
+}
+.container{
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    transition-delay: 0.2s;
+}
+.conatiner-img img{
+	display:block;
+	margin:  150px auto 0px auto;
+	max-width: 200px;
+}
+.container-p h3{
+	color: #fbff3a;
+	text-align:center;
+	font-weight: 400;
+	font-family: 'Roboto';
+}
+.container-button button{
+margin:0 auto; 
+display:block;
+}
+.container-button button i{
+	font-size: 75px;
+	color:#1c1c1c;
+	margin:25px 0;
+
+}
+.container-img, .container-p, .container-button{
+	padding: 50px 0;
+}
+.logo img{
+	display:block;
+	margin:20px auto;
+	width:90%;
+	max-width:200px;
+}
+.options{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 2px #fbff3a solid;
+	background-color: transparent;
+	padding: 15px 15px;
+	color: #fbff3a;
+	margin: 10px auto;
+	display:block;
+	text-align:center;
+	width: 100%;
+	max-width: 200px;
+	-webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition:all 300ms cubic-bezier(0.47, 0, 0.745, 0.715); 
+}
+.options:hover, .options:focus{
+	background-color: #fbff3a;
+	color:#100f0f;
+}
+.row h3{
+	color: #fff;
+	padding:30px 15px;
+	text-align: center;
+}
+.boxed-body{
+	width:100%;
+	max-width:700px;
+	height: auto;
+	margin:0 auto;
+	display:block;
+}
+.poster{
+	margin: 0 auto;
+	display:block;
+	width: 100%;
+	max-width: 300px;
+}
+.title{
+	font-size:24px;
+	font-weight: 600;
+	padding: 15px;
+}
+.runtime{
+	color:#fbff3a;
+	font-size:18px;
+	padding: 5px 15px;
+	font-weight: 600;
+}
+.other-data, .resumen{
+	font-size:14px;
+	padding: 3px 15px;
+}
+.resumen{
+	font-style: italic;
+}
+@media (max-width:400px) {
+	.row .col.s6 {
+		width: 100%;
+		margin-left: auto;
+		left: auto;
+		right: auto;
+	}
+}

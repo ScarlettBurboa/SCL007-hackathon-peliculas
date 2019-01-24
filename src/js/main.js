@@ -1,3 +1,29 @@
+const entry = document.getElementById('play').addEventListener('click', () =>{
+  const entryAplication = document.getElementById('entry-aplication');
+  entryAplication.classList.add('hide');
+  const options = document.getElementById('options');
+  options.classList.add('show');
+});
+const optionMin30min = document.getElementById('menos-30-min').addEventListener('click', () =>{
+    const textExplication = document.getElementById('text-explication');
+    textExplication.classList.add('hide'); 
+    const root = document.getElementById('root');
+    root.classList.add('show')
+     
+  });
+const option30a60min = document.getElementById('30-60min').addEventListener('click', () =>{
+    const textExplication = document.getElementById('text-explication');
+    textExplication.classList.add('hide'); 
+});
+const option1a2horas = document.getElementById('1-2horas').addEventListener('click', () =>{
+    const textExplication = document.getElementById('text-explication');
+    textExplication.classList.add('hide'); 
+});
+const optionMax2horas = document.getElementById('más-2-horas').addEventListener('click', () =>{
+    const textExplication = document.getElementById('text-explication');
+    textExplication.classList.add('hide'); 
+});
+
 const omdbData = ['0083658','0110912','0137523','0816692','0169547','1396484','0050976','0062622','2737304',
 '0088847','2356777','1442462','1305826','0096697','3205802','5753856','4574334','0108778','0106179','0149460'
 ];
@@ -88,3 +114,5 @@ selectTime.addEventListener('change', ()=> {
   document.getElementById('root').innerHTML = filteredTime;
 });
 }
+
+
