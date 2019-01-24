@@ -9,27 +9,27 @@ document.getElementById('menos-30-min').addEventListener('click', () =>{
     textExplication.classList.add('hide'); 
     const root = document.getElementById('root');
     root.classList.add('show');
-    const omdbData = ['0386676','1865718','0098904','4508902','0460649','2861424','0108778','1305826','0096697','0149460']
+    const omdbData = ['0386676','1865718','0098904','4508902','0460649','2861424','0108778','1305826','0096697','0149460'];
     getData(omdbData);   
   });
 document.getElementById('30-60min').addEventListener('click', () =>{
     const textExplication = document.getElementById('text-explication');
     textExplication.classList.add('hide'); 
-    const omdbData = ['0248654','0098936','2085059','0052520','3205802','1796960','1442462','2356777','0903747','0944947',]
+    const omdbData = ['0248654','0098936','0248654','0052520','3205802','1796960','1442462','2356777','0903747','0944947'];
     getData(omdbData);  
 });
 document.getElementById('1-2horas').addEventListener('click', () =>{
     const textExplication = document.getElementById('text-explication');
     textExplication.classList.add('hide'); 
+    const omdbData = ['2582802','0078748','5311514','1049413','0081846','2085059','0384766','0266697','1285016','2120120'];
+    getData(omdbData); 
 });
 document.getElementById('más-2-horas').addEventListener('click', () =>{
     const textExplication = document.getElementById('text-explication');
     textExplication.classList.add('hide'); 
+    const omdbData = ['0111161','0110912','1375666','0816692','0317248','0245429','0119698','0081505','0169547','3748528'];
+    getData(omdbData); 
 });
-
-/*const omdbData = ['0083658','0110912','0137523','0816692','0169547','1396484','0050976','0062622','2737304',
-'0088847','2356777','1442462','1305826','0096697','3205802','5753856','4574334','0108778','0106179','0149460'
-];*/
 
 let data = [];
 
