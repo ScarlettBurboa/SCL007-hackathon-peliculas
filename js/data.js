@@ -15,18 +15,18 @@ for(i=1; i<=50; i++){
     });
 };
 console.log(data)
-
   const showData = (data) => {
     let allData = '';
       data.forEach(element => { 
         return allData += `<div>
-             <p>Title: ${element.Title}</p>
-             <p>Year: ${element.Year}</p>
-             <p> Genre: ${element.Genre}</p>
-             <p> Runtime: ${element.Runtime}</p>
-             <p> Plot: ${element.Plot}</p>
-             <p> Tipo: ${element.Type}</p>
-             <p> Id: ${element.imdbID}</p>
+            <img class="poster" src=${element.Poster} />
+             <p class="title">Title: ${element.Title}</p>
+             <p class="runtime"> Runtime: ${element.Runtime}</p>
+             <p class="other-data">Year: ${element.Year}</p>
+             <p class="other-data"> Genre: ${element.Genre}</p>
+             <p class="resumen"> Plot: ${element.Plot}</p>
+             <p class="other-data"> Tipo: ${element.Type}</p>
+             <p class="other-data"> Id: ${element.imdbID}</p>
           </div>`
       });
       document.getElementById('root').innerHTML = allData;
@@ -51,4 +51,3 @@ selectGenre.addEventListener('change', ()=> {
   document.getElementById('root').innerHTML = filteredData;
   console.log(filteredData)
 });
-
