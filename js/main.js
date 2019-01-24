@@ -12,15 +12,41 @@ document.getElementById('menos-30-min').addEventListener('click', () =>{
   const omdbData = ['0386676','1865718','0098904','4508902','0460649','2861424','0108778','1305826','0096697','0149460'];
   let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
   getData(randomItem); 
+  document.getElementById('button-refresh').innerHTML = '';
+  const buttonR = document.getElementById('button-refresh');
+  buttonR.classList.add('show');
   const buttonrefresh = document.createElement('button');
-  const buttonRefreshText = document.create  
+  const buttonRefreshText = document.createTextNode('Siguiente');
+  buttonrefresh.classList.add('button-netx');
+  buttonrefresh.setAttribute('id', 'actionButton');
+  buttonR.appendChild(buttonrefresh);
+  buttonrefresh.appendChild(buttonRefreshText); 
+  document.getElementById('actionButton').addEventListener('click', () =>{
+    const omdbData = ['0386676','1865718','0098904','4508902','0460649','2861424','0108778','1305826','0096697','0149460'];
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem); 
+  });  
 });
 document.getElementById('30-60min').addEventListener('click', () =>{
   const textExplication = document.getElementById('text-explication');
   textExplication.classList.add('hide'); 
   const omdbData = ['0248654','0098936','0248654','0052520','3205802','1796960','1442462','2356777','0903747','0944947'];
   let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem);
+  document.getElementById('button-refresh').innerHTML = '';
+  const buttonR = document.getElementById('button-refresh');
+  buttonR.classList.add('show');
+  const buttonrefresh = document.createElement('button');
+  const buttonRefreshText = document.createTextNode('Siguiente');
+  buttonrefresh.classList.add('button-netx');
+  buttonrefresh.setAttribute('id', 'actionButton');
+  buttonR.appendChild(buttonrefresh);
+  buttonrefresh.appendChild(buttonRefreshText); 
+  document.getElementById('actionButton').addEventListener('click', () =>{
+    const omdbData = ['0248654','0098936','0248654','0052520','3205802','1796960','1442462','2356777','0903747','0944947'];
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
   getData(randomItem); 
+  }); 
 });
 document.getElementById('1-2horas').addEventListener('click', () =>{
   const textExplication = document.getElementById('text-explication');
@@ -28,6 +54,20 @@ document.getElementById('1-2horas').addEventListener('click', () =>{
   const omdbData = ['2582802','0078748','5311514','1049413','0081846','2085059','0384766','0266697','1285016','2120120'];
   let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
   getData(randomItem);
+  document.getElementById('button-refresh').innerHTML = '';
+  const buttonR = document.getElementById('button-refresh');
+  buttonR.classList.add('show');
+  const buttonrefresh = document.createElement('button');
+  const buttonRefreshText = document.createTextNode('Siguiente');
+  buttonrefresh.classList.add('button-netx');
+  buttonrefresh.setAttribute('id', 'actionButton');
+  buttonR.appendChild(buttonrefresh);
+  buttonrefresh.appendChild(buttonRefreshText); 
+  document.getElementById('actionButton').addEventListener('click', () =>{
+    const omdbData = ['2582802','0078748','5311514','1049413','0081846','2085059','0384766','0266697','1285016','2120120'];
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem); 
+  });
 });
 document.getElementById('más-2-horas').addEventListener('click', () =>{
   const textExplication = document.getElementById('text-explication');
@@ -35,6 +75,20 @@ document.getElementById('más-2-horas').addEventListener('click', () =>{
   const omdbData = ['0111161','0110912','1375666','0816692','0317248','0245429','0119698','0081505','0169547','3748528'];
   let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
   getData(randomItem);
+  document.getElementById('button-refresh').innerHTML = '';
+  const buttonR = document.getElementById('button-refresh');
+  buttonR.classList.add('show');
+  const buttonrefresh = document.createElement('button');
+  const buttonRefreshText = document.createTextNode('Siguiente');
+  buttonrefresh.classList.add('button-netx');
+  buttonrefresh.setAttribute('id', 'actionButton');
+  buttonR.appendChild(buttonrefresh);
+  buttonrefresh.appendChild(buttonRefreshText); 
+  document.getElementById('actionButton').addEventListener('click', () =>{
+    const omdbData = ['0111161','0110912','1375666','0816692','0317248','0245429','0119698','0081505','0169547','3748528'];
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem); 
+  });
 });
 
 const getData = (randomItem) =>{
