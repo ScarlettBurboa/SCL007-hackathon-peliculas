@@ -93,7 +93,7 @@ document.getElementById('más-2-horas').addEventListener('click', () =>{
 
 const getData = (randomItem) =>{
   let data = [];    
-    let url = `http://www.omdbapi.com/?i=tt${randomItem}&apikey=a963a012`; 
+    let url = `https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?i=tt${randomItem}&apikey=a963a012`; 
     fetch(url)
       .then(response => response.json())
       .then((out) => {
