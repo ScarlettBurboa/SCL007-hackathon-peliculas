@@ -7,7 +7,7 @@
 ## **Definición de usuario**
 Se realizó una  [encuesta](https://docs.google.com/forms/d/1s_Q2comfimGzqFrxoVIecETbMywEb7x5iWU0fHTjIQw/edit#responses) para poder conocer más sobre las preferencias de los usuarios al momento de ver series y películas, mas del 70% ocupa netflix y ve entre 1 a 2 horas diarias,Chile ocupa el [quinto lugar](https://www.m360.cl/noticias/cultura-pop/actualidad/chile-es-el-quinto-pais-del-mundo-ve-mas-netflix/2017-12-11/153914.html) de personas que ven Netflix todos los días, la mayoría tiene entre 18 y 34 años,la mayoría trabaja y un 62% le gusta recibir recomendaciones de que ver.
 
-![imagen 4](img/1.png)
+![imagen 1](img/1.png)
 
 ## **Necesidad de usuario**
 1. Recibir recomendaciones de series y películas que se acomoden al tiempo que disponga.
@@ -18,6 +18,7 @@ Se realizó una  [encuesta](https://docs.google.com/forms/d/1s_Q2comfimGzqFrxoVI
 
 
 ## **Historia de Usuario**
+Para realizar el proyecto nos basamos en dos historias del usuario principales.
 
 **1.**
 
@@ -47,6 +48,9 @@ para: recibir opciones más afines a lo que quiero.
 dada: las dos opciones.
 cuando: seleccione una.
 entonces: mostrará sólo de esa opción.
+
+En la continuación del proyecto, se trabajaría con estas historias también, por el momento solo las enunciaremos.
+
 
 **3.**
 
@@ -89,6 +93,24 @@ Antes de comenzar, se analizaron páginas de referentes:
 
 
 ### ** Prototipo baja fidelidad**
-![imagen 4](img/2.png)
-![imagen 4](img/3.png)
-![imagen 4](img/4.png)
+![imagen 2](img/2.png)
+![imagen 3](img/3.png)
+
+
+### ** Prototipo alta fidelidad**
+[Primer prototipo figma](https://www.figma.com/file/SZIt3atj8QRzB6MqwrGvxdZ8/hackathon-2.0.?node-id=0%3A1) 
+
+
+
+### ** Test de usabilidad**
+Se realizaron dos prototipos con pequeñas diferencias de fujo para testear, se les mostró ambos a 8 usuarios, de los cuáles 7 prefirieron la segunda opción se les hizo más fácil y entendible.
+![imagen 5](img/test.png)
+De acuerdo a ciertas observaciones como:
+ * *más claros los rangos de tiempo*
+ * *el botón "otra" les incomodó en el lugar que esta*
+ * *la segunda pantalla, pensaron que le faltaba algo porque estaba muy vacía*
+ se realizaron algunos cambios y se obtuvo el p [prototipo final.](https://www.figma.com/proto/ImgJy2vp33vNZOREzk93obgZ/prototipo-final?node-id=1%3A2&scaling=scale-down)
+
+
+
+
