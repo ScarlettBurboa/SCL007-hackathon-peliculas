@@ -10,7 +10,8 @@ document.getElementById('menos-30-min').addEventListener('click', () =>{
   const root = document.getElementById('root');
   root.classList.add('show');
   const omdbData = ['0386676','1865718','0098904','4508902','0460649','2861424','0108778','1305826','0096697','0149460'];
-  getData(omdbData); 
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem); 
   const buttonrefresh = document.createElement('button');
   const buttonRefreshText = document.create  
 });
@@ -18,26 +19,27 @@ document.getElementById('30-60min').addEventListener('click', () =>{
   const textExplication = document.getElementById('text-explication');
   textExplication.classList.add('hide'); 
   const omdbData = ['0248654','0098936','0248654','0052520','3205802','1796960','1442462','2356777','0903747','0944947'];
-  getData(omdbData);  
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem); 
 });
 document.getElementById('1-2horas').addEventListener('click', () =>{
   const textExplication = document.getElementById('text-explication');
   textExplication.classList.add('hide'); 
   const omdbData = ['2582802','0078748','5311514','1049413','0081846','2085059','0384766','0266697','1285016','2120120'];
-  getData(omdbData); 
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem);
 });
 document.getElementById('más-2-horas').addEventListener('click', () =>{
   const textExplication = document.getElementById('text-explication');
   textExplication.classList.add('hide'); 
   const omdbData = ['0111161','0110912','1375666','0816692','0317248','0245429','0119698','0081505','0169547','3748528'];
-  getData(omdbData); 
+  let randomItem = omdbData[Math.floor(Math.random()*omdbData.length - 1)+ 1];
+  getData(randomItem);
 });
 
-const getData = (omdbData) =>{
-  let data = [];
-//console.log(omdbData)
-  for (let i = 0; i < omdbData.length; i++) {      
-    let url = `http://www.omdbapi.com/?i=tt${omdbData[i]}&apikey=a963a012`; 
+const getData = (randomItem) =>{
+  let data = [];    
+    let url = `http://www.omdbapi.com/?i=tt${randomItem}&apikey=a963a012`; 
     fetch(url)
       .then(response => response.json())
       .then((out) => {
@@ -49,7 +51,7 @@ const getData = (omdbData) =>{
         })
       .catch(error => { throw error });
   }
-};
+
 const showData = (data) => {
   let allData = '';
   data.forEach(element => { 
