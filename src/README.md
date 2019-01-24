@@ -10,6 +10,14 @@ Se detecta como principal problemática que la mayoría del tiempo los usuarios 
 
 ![imagen 1](img/1.png)
 
+
+En base a nuestra investigación y encuestas, definimos a nuestro usuario:
+
+![imagen 3](img/usuarioR.jpg)
+
+![imagen 3](img/UsuarioD.jpg)
+
+
 ## **Necesidad de usuario**
 1. Recibir recomendaciones de series y películas que se acomoden al tiempo que disponga.
 2. Poder filtrar según lo que quiera ver, series o películas.
@@ -19,6 +27,7 @@ Se detecta como principal problemática que la mayoría del tiempo los usuarios 
 
 
 ## **Historia de Usuario**
+
 Para realizar el proyecto nos basamos en dos historias del usuario principales.
 
 **1.**
@@ -63,7 +72,9 @@ quiero:poder elegir el género.
 
 para: recibir opciones más afines a lo que quiero.
 
-*criterios de aceptación*
+**1.** como: usuario que ve series y películas.quiero:que me recomiende p/s según mi tiempo
+disponible.para: poder optimizar mi tiempo.*criterios de aceptación*dada: un rango de tiempos.cuando:selecciones uno.entonces:visualice las opciones de s/p para ver en ese tiempo.
+
 
 dada: las varias opciones.
 
@@ -71,23 +82,16 @@ cuando:selecciones una.
 
 entonces:mostrará sólo s/p de esa opción.
 
-**4.**
 
-como: usuario que ve series y películas.
+En una próxima continuación del proyecto, se desarrollarían estas dos historias de usuario:
+
+**3.** como: usuario que ve series y películas.quiero:poder elegir el género.para: recibir opciones más afines a lo que quiero.*criterios de aceptación*dada: las varias opciones.cuando:selecciones una.entonces:mostrará sólo s/p de esa opción.
 
 quiero:poder elegir ver series o películas.
 
 para: recibir opciones más afines a lo que quiero.
 
-*criterios de aceptación*
-
-dada: las dos opciones.
-
-cuando: seleccione una.
-
-entonces: mostrará sólo de esa opción.
-
-
+**4.** como: usuario que ve series y películas.quiero:poder elegir ver series o películas.para: recibir opciones más afines a lo que quiero.*criterios de aceptación*dada: las dos opciones.cuando: seleccione una.entonces: mostrará sólo de esa opción.
 
 ## **Definición de Terminado**
 **1**
@@ -96,9 +100,8 @@ entonces: mostrará sólo de esa opción.
 * el usuario hace clic en una.
 * se visualizará una recomendación de película.
 
-
-
-
+**2** 
+Al ingresar, el usuario recorre intuitivamente la página.
 
 ## **Ideación de Diseño**
 Antes de comenzar, se analizaron páginas de referentes:
@@ -118,12 +121,31 @@ Diseñamos un prototipo Mobile first donde la primera pantalla pregunta por el t
 ## **Prototipo alta fidelidad**
 [Primer prototipo figma](https://www.figma.com/file/SZIt3atj8QRzB6MqwrGvxdZ8/hackathon-2.0.?node-id=0%3A1) 
 
+
 ### **visual design**FALTAAA
 * la estrucura de la página toma como referentes páginas relacionadas con entrega de recomendaciones de películas y series, como tonos oscuros para el fondo, letras simples,etc.
 * La paleta de colores esta basada en la página IMBb, ya que la data que ocupa la aplicación es de esta página.
 * El logotipo ocupa la tipografía  con l
 
+Luego de hacer ciertos estudios, decidimos hacer cambios al diseño para optimizar la experiencia del usuario:
 
+## 1 
+
+Reducimos la cantidad de páginas de 5 a 3, logrando así economizar aún más el tiempo del usuario.
+
+## 2 
+
+Decidimos hacer la búsqueda simplemente según el tiempo que tiene el usuario, con la finalidad de ahorrarle al usuario buscar alguna opción para ver, nosotros le sugerimos automáticamente una opción.
+
+Después de hacer lo cambios anteriormente mencionados, realizamos otros estudios y búsquedas y decidimos darle un valor agregado:
+
+## 1 
+
+Colocamos un botón de "siguiente", para darle la opción al usuario de cambiar de película.
+
+## 2
+
+Creamos una página de inicio donde mostramos el logo de la página y una pequeña acción que invita al usuario a usarla.
 
 ## **Test de usabilidad**
 Basándonos en el primer prototipo se realizaron dos opciones con pequeñas diferencias de flujo para testear, donde nos enfocamos en las dos principales historia de usuario, se les mostró ambos a 8 usuarios, de los cuáles 7 prefirieron la segunda opción se les hizo más fácil y entendible.
@@ -149,6 +171,10 @@ funcionalidad: se trabajó con lenguaje Vanilla JS, HTML5,CSS3,Framework Css Mat
 
 
 
+## **User Flow**:
 
+Acá se muestra el flujo final del usuario al usar nuestra página
+
+![imagen 5](img/userflow.jpg)
 
 
