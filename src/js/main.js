@@ -10,7 +10,9 @@ document.getElementById('menos-30-min').addEventListener('click', () =>{
   const root = document.getElementById('root');
   root.classList.add('show');
   const omdbData = ['0386676','1865718','0098904','4508902','0460649','2861424','0108778','1305826','0096697','0149460'];
-  getData(omdbData);   
+  getData(omdbData); 
+  const buttonrefresh = document.createElement('button');
+  const buttonRefreshText = document.create  
 });
 document.getElementById('30-60min').addEventListener('click', () =>{
   const textExplication = document.getElementById('text-explication');
@@ -52,13 +54,22 @@ const showData = (data) => {
   let allData = '';
   data.forEach(element => { 
     return allData += `<div>
-      <p>Title: ${element.Title}</p>
-      <p>Year: ${element.Year}</p>
-      <p> Genre: ${element.Genre}</p>
-      <p> Runtime: ${element.Runtime}</p>
-      <p> Plot: ${element.Plot}</p>
-      <p> Tipo: ${element.Type}</p>
-      <p> Id: ${element.imdbID}</p>
+    <div class="row">
+      <div class="col s5">
+      <img class="backgrounds" src=${element.Poster}>
+      <div class="background" style="background-image: url(${element.Poster}); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed; height:300px; width: 100%;"></div>
+      </div>
+      <div class="col s7">
+      <div class="information">
+      <p class="title">Title: ${element.Title}</p>
+      <p class="runtime">Runtime: ${element.Runtime}</p>
+      <p class="other-data">Year: ${element.Year}</p>
+      <p class="other-data"> Genre: ${element.Genre}</p>  
+      <p class="resumen"> Plot: ${element.Plot}</p>
+      <p class="other-data"> Tipo: ${element.Type}</p>
+      </div>
+      </div>
+    </div>
       </div>`
   });
     document.getElementById('root').innerHTML = allData;
