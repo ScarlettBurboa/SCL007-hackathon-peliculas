@@ -64,17 +64,16 @@ cuando:la recorra
 entonces: reciba la recomendación
 
 
-**3.**
+En una próxima continuación del proyecto, se desarrollarían estas dos historias de usuario:
 
-como: usuario que ve series y películas.
+**3.**
+ como: usuario que ve series y películas.
 
 quiero:poder elegir el género.
 
 para: recibir opciones más afines a lo que quiero.
 
-**1.** como: usuario que ve series y películas.quiero:que me recomiende p/s según mi tiempo
-disponible.para: poder optimizar mi tiempo.*criterios de aceptación*dada: un rango de tiempos.cuando:selecciones uno.entonces:visualice las opciones de s/p para ver en ese tiempo.
-
+*criterios de aceptación*
 
 dada: las varias opciones.
 
@@ -82,17 +81,21 @@ cuando:selecciones una.
 
 entonces:mostrará sólo s/p de esa opción.
 
+**4.**
 
-En una próxima continuación del proyecto, se desarrollarían estas dos historias de usuario:
-
-**3.** como: usuario que ve series y películas.quiero:poder elegir el género.para: recibir opciones más afines a lo que quiero.*criterios de aceptación*dada: las varias opciones.cuando:selecciones una.entonces:mostrará sólo s/p de esa opción.
+como: usuario que ve series y películas.
 
 quiero:poder elegir ver series o películas.
 
 para: recibir opciones más afines a lo que quiero.
 
-**4.** como: usuario que ve series y películas.quiero:poder elegir ver series o películas.para: recibir opciones más afines a lo que quiero.*criterios de aceptación*dada: las dos opciones.cuando: seleccione una.entonces: mostrará sólo de esa opción.
+*criterios de aceptación*
 
+dada: las dos opciones.
+
+cuando: seleccione una.
+
+entonces: mostrará sólo de esa opción.
 ## **Definición de Terminado**
 **1**
 * al ingresar a la página el usuario hace clic en el botón.
@@ -122,10 +125,9 @@ Diseñamos un prototipo Mobile first donde la primera pantalla pregunta por el t
 [Primer prototipo figma](https://www.figma.com/file/SZIt3atj8QRzB6MqwrGvxdZ8/hackathon-2.0.?node-id=0%3A1) 
 
 
-### **visual design**FALTAAA
+### **visual design**
 * la estrucura de la página toma como referentes páginas relacionadas con entrega de recomendaciones de películas y series, como tonos oscuros para el fondo, letras simples,etc.
 * La paleta de colores esta basada en la página IMBb, ya que la data que ocupa la aplicación es de esta página.
-* El logotipo ocupa la tipografía  con l
 
 Luego de hacer ciertos estudios, decidimos hacer cambios al diseño para optimizar la experiencia del usuario:
 
@@ -156,6 +158,12 @@ De acuerdo a ciertas observaciones como:
  * *la segunda pantalla, pensaron que le faltaba algo porque estaba muy vacía*
  se realizaron algunos cambios y se obtuvo el  [prototipo final.](https://www.figma.com/proto/ImgJy2vp33vNZOREzk93obgZ/prototipo-final?node-id=1%3A2&scaling=scale-down)
 
+ ## **User Flow**:
+
+Acá se muestra el flujo final del usuario al usar nuestra página
+
+![imagen 5](img/userflow.jpg)
+
 # APP MOVIE TIME
 
 
@@ -169,12 +177,5 @@ funcionalidad: se trabajó con lenguaje Vanilla JS, HTML5,CSS3,Framework Css Mat
 
  
 
-
-
-## **User Flow**:
-
-Acá se muestra el flujo final del usuario al usar nuestra página
-
-![imagen 5](img/userflow.jpg)
 
 
